@@ -17,5 +17,11 @@ public class UserController2 {
 		return "user/insert";
 	}
 	
-	
+	//로그인 페이지
+	@RequestMapping("/user/update.do")
+	public String update(){
+		logger.info("현재 'update' 에 접속중입니다.");
+		
+		return "user/update";
+	}
 }
