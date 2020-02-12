@@ -9,7 +9,7 @@ public class UserController2 {
 		return "user/login";
 	}
 	
-	//로그인 페이지
+	//삽입 페이지
 	@RequestMapping("/user/insert.do")
 	public String insert(){
 		logger.info("현재 'insert' 에 접속중입니다.");
@@ -17,11 +17,19 @@ public class UserController2 {
 		return "user/insert";
 	}
 	
-	//로그인 페이지
+	//수정 페이지
 	@RequestMapping("/user/update.do")
 	public String update(){
 		logger.info("현재 'update' 에 접속중입니다.");
 		
 		return "user/update";
+	}
+	
+	//삭제 페이지
+	@RequestMapping("/user/delete.do")
+	public String delete(){
+		logger.info("현재 'delete' 에 접속중입니다.");
+		
+		return "user/delete";
 	}
 }
