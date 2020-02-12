@@ -1,5 +1,5 @@
 @Controller
-public class UserController {
+public class UserController2 {
 	
 	//로그인 페이지
 	@RequestMapping("/user/login.do")
@@ -7,6 +7,14 @@ public class UserController {
 		logger.info("현재 'login' 에 접속중입니다.");
 		
 		return "user/login";
+	}
+	
+	//로그인 페이지
+	@RequestMapping("/user/insert.do")
+	public String insert(){
+		logger.info("현재 'insert' 에 접속중입니다.");
+		
+		return "user/insert";
 	}
 	
 	
