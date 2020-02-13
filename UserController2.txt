@@ -33,7 +33,11 @@ public class UserController2 {
 		return "user/delete";
 	}
 	
+<<<<<<< HEAD
 	//회원조회 페이지로 이동 - master branch에서 작업
+=======
+	//회원조회 페이지로 이동
+>>>>>>> develop
 	@RequestMapping("/user/select.do")
 	public String select(){
 		logger.info("현재 'select' 에 접속중입니다.");
