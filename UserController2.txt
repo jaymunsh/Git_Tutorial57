@@ -32,4 +32,12 @@ public class UserController2 {
 		
 		return "user/delete";
 	}
+	
+	//회원조회 페이지로 이동
+	@RequestMapping("/user/select.do")
+	public String select(){
+		logger.info("현재 'select' 에 접속중입니다.");
+		
+		return "user/select";
+	}
 }
